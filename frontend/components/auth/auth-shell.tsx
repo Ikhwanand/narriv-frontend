@@ -121,7 +121,7 @@ function NarrivLogo() {
   return (
     <div className="flex items-center gap-3">
       <div className="relative flex h-[100px] w-[100px] items-center justify-center overflow-hidden">
-        <Image src="/narriv-logo.svg" alt="Narriv Logo" width={180} height={180} className="max-w-none scale-[1.4] object-contain" priority />
+        <Image src="/narriv-logo.svg" alt="Narriv Logo" width={180} height={180} className="max-w-none scale-105 object-contain" priority />
       </div>
       <span className="text-[64px] font-bold tracking-[-0.04em] text-white">Narriv</span>
     </div>
