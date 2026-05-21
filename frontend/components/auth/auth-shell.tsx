@@ -51,7 +51,15 @@ export function AuthShell({ visual, children, topAction }: AuthShellProps) {
       <BrandPanel visual={visual} />
       <section className="relative flex min-h-dvh items-center justify-center px-6 py-10 sm:px-10 lg:px-14">
         {topAction ? <div className="absolute right-6 top-6 sm:right-10 lg:right-14 lg:top-10">{topAction}</div> : null}
-        <div className="w-full max-w-[520px] pt-12 lg:pt-0">{children}</div>
+        <div className="w-full max-w-[520px] pt-12 lg:pt-0">
+          <div className="mb-12 lg:hidden flex items-center gap-3">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full">
+              <Image src="/narriv-logo.svg" alt="Narriv" width={48} height={48} priority className="h-14 w-14 scale-[1.28] object-cover" />
+            </span>
+            <span className="text-3xl font-bold tracking-[-0.05em] text-[#111536]">Narriv</span>
+          </div>
+          {children}
+        </div>
       </section>
     </main>
   );
@@ -123,8 +131,8 @@ function BrandPanel({ visual }: { visual: AuthVisual }) {
 function NarrivLogo() {
   return (
     <div className="flex items-center gap-3">
-      <div className="relative flex h-[100px] w-[100px] items-center justify-center overflow-hidden">
-        <Image src="/logo/Final Logo Only Narriv.png" alt="Narriv Logo" width={180} height={180} className="max-w-none scale-[1.4] object-contain" priority />
+      <div className="relative flex h-[100px] w-[100px] items-center justify-center overflow-hidden rounded-full">
+        <Image src="/narriv-logo.svg" alt="Narriv Logo" width={100} height={100} className="h-[115px] w-[115px] scale-[1.28] object-cover" priority />
       </div>
       <span className="text-[64px] font-bold tracking-[-0.04em] text-white">Narriv</span>
     </div>

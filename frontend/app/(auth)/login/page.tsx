@@ -85,9 +85,7 @@ export default function LoginPage() {
 
   return (
     <AuthShell visual="dashboard" topAction={<LanguageSelector />}>
-      <div className="mb-12 lg:hidden">
-        <p className="text-3xl font-bold tracking-[-0.04em] text-[#111536]">Narriv</p>
-      </div>
+
 
       <div className="mb-12">
         <h1 className="text-[34px] font-bold leading-tight tracking-[-0.04em] text-[#111536]">{t("title")}</h1>
